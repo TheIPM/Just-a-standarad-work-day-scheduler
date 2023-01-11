@@ -7,7 +7,7 @@
     // local storage. HINT: What does `this` reference in the click listener
     // function? How can DOM traversal be used to get the "hour-x" id of the
     // time-block containing the button that was clicked? How might the id be
-    // useful when saving the description in local storage?
+    // useful when saving the tx in local storage?
     //
     $(function () {
       var save = document.querySelectorAll(".saveBtn");
@@ -15,7 +15,7 @@
         button.addEventListener("click", function () {
         var timeBlock = this.closest(".time-block");
         var timeBlockId = timeBlock.id;
-        var input = timeBlock.querySelector(".description").value;
+        var input = timeBlock.querySelector(".tx").value;
         localStorage.setItem(timeBlockId, input);
         });
       });
@@ -54,7 +54,7 @@
           var timeBlockId = block.id;
           var input = localStorage.getItem(timeBlockId);
           if (input) {
-              block.querySelector(".description").value = input;
+              block.querySelector(".tx").value = input;
           }
       });
   }
