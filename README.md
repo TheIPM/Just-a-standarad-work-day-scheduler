@@ -1,5 +1,6 @@
 # Just-a-standard-work-day-scheduler ![badmath](https://img.shields.io/github/stars/TheIPM/My-Portfolio?style=plastic) ![badmath](https://img.shields.io/github/followers/TheIPM)
 
+https://theipm.github.io/Just-a-standarad-work-day-scheduler/
 
 ## Description
 
